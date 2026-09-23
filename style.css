@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #111;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section [id]{
+    scroll-margin-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    border-bottom: 1px solid #ddd;
+    background: #595959;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+.magazine-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    padding: 80px 50px;
+    background: #efdfc5;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 0px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+#projects {
+    padding: 80px 50px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f2ed;
+}
+
+#projects h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.projects-item {
+    background: #efdfc5;
+    border: 1px solid #eee;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projects-item:hover {
+    transform: translateY(-5px);
+}
+
+.projects-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.projects-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.projects-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+#academics-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    padding: 40px 20px;
+    background-color: #f5f2ed;
+}
+
+.academics-section {
+    border-top: 1px solid #e0e0e0; 
+    padding-top: 60px;          
+    margin-top: 80px;             
+}
+
+.academics-left h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 40px 50px;
+}
+
+.academics-text p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left;
+    line-height: 1.6;
+    padding-left: 40px;
+    
+}
+
+.academics-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 130px;
+}
+
+.academics-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: 0.3s;
+}
+
+.academics-gallery img:hover {
+    filter: grayscale(0%);
+}
+
+#skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    border-top: 1px solid #111;
+    padding: 0 40px;
+    background-color: #efdfc5;
+}
+
+.skills-category{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 40px 50px;
+}
+
+.skills-category h1 {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #111;
+    padding-bottom: 8px;
+}
+
+.skills-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-item {
+    background: #efdfc5;
+    color: black;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.professional-skills{
+    display: grid;
+    object-fit: cover;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding: 30px 40px;
+}
+.prof.skills-item.prof {
+    background: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.professional-skills h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #111;
+    padding-bottom: 5px;
+   
+}
+
+#site-footer {
+    border-top: 1px solid #111;
+    margin-top: 0px;
+    padding: 40px 20px;
+    background-color: #595959;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link {
+    color: #111;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.6;
+}
+
+.footer-copy {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .magazine-hero, .projects-grid, .academics-container, .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 20px;
+    }
+    .hero-text-box h1 {
+        font-size: 2.5rem;
+    }
+}
